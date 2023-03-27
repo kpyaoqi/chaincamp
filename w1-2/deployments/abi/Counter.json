@@ -1,0 +1,8 @@
+[
+  "constructor(uint256)",
+  "event Log(string,address,uint256,bytes)",
+  "function add(uint256)",
+  "function balanceOf(address) view returns (uint256)",
+  "function counter() view returns (uint256)",
+  "function getBalance() view returns (uint256)"
+]

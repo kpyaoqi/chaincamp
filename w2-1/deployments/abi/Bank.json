@@ -1,0 +1,13 @@
+[
+  "constructor() payable",
+  "event Log(string,address,uint256,bytes)",
+  "event total(address,uint256)",
+  "function balanceOf(address) view returns (uint256)",
+  "function balances(address) view returns (uint256)",
+  "function balancesInserted(address) view returns (bool)",
+  "function balancesKey(uint256) view returns (address)",
+  "function getAll()",
+  "function getBalance() view returns (uint256)",
+  "function set() payable",
+  "function withdraw(address)"
+]

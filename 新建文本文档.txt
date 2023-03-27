@@ -1,0 +1,77 @@
+作业一：
+安装 Metamask、并创建好账号
+• 执行一次转账
+• 使用Remix创建任意⼀个合约
+• 创建一个add(x)方法
+作业要求：
+1. 使用自己的github创建一个作业代码库
+2. 每一次作业使用一个文件夹(w1) 
+3. 提交代码、截图、交易 hash 等
+
+作业二：
+• 使⽤ Truffle 部署 Counter 合约 到 test 网络（goerli）（提交交易 hash）
+• 编写一个测试用例
+
+作业三：
+使用 Hardhat 部署修改后的 Counter
+使用 Hardhat 测试 Counter
+写一个脚本调用 count(）
+
+作业四：
+编写一个Bank合约
+通过 Metamask 向Bank合约转账ETH
+在Bank合约记录每个地址转账金额
+编写 Bank合约withdraw(),实现提取出所有的 ETH
+
+作业五：
+编写合约Score，用于记录学生 (地址) 分数:
+仅有老师 (用modifier权限控制) 可以添加和修改学生分数
+分数不可以大于 100;
+编写合约 Teacher 作为老师，通过 IScore 接口调用修改学生分数。
+
+作业六：
+发行一个 ERC20 Token:
+可动态增发 (起始发行量是 0)
+通过 ethersjs.调用合约进行转账
+编写一个Vault 合约:
+编写deposite 方法，实现 ERC20 存入 Vault,并记录每个用户存款金额，用从前端调用 (Approve,transferfrom)
+编写 withdraw 方法，提取用户自己的存款 (前端调用)
+前端显示用户存款金额
+	
+作业七：
+发行一个 ERC721 Token:
+使用 ethers.js 解析ERC721 转账事件 (加分项: 记录到数据库中，可方便查询用户持有的所有 NFT)
+(或) 使用TheGraph 解析ERC721 转账事件
+
+作业八：
+部署自己的 ERC20 合约MyToken
+编写合约MyTokenMarket 实现:
+AddLiquidity(): 函数内部调用 UniswapV2Router 添加MyToken与 ETH 的流动性
+buyToken(): 用户可调用该函数实现购买MyToken
+
+作业九：
+在上一次作业的基础上
+完成代币兑换后，直接质拥 MasterChef
+withdraw():从 MasterChef 提取Token 方法
+
+作业十：
+以太坊测试网上部署两个自己的 ERC20 合约MyToken，分别在UniswapV2、V3 (网页上) 添加流动性。
+作业: 编写合约执行闪电贷 (参考 V2 的ExampleFlashSwap)
+uniswapV2Call中，用收到的 TokenA 在 Uniswap V3 的 SwapRouter 兑换为 TokenB 还回到uniswapV2 Pair 中。
+
+作业十一：
+在一笔交易中完成 (模拟闪电贷交易)
+在AAVE 中借款token A
+使用token A在 UniswapV2 中交易兑换 token B，然后在 Uniswap V3 token B兑换为 tokenA
+tokenA 还款 给AAVE
+
+作业十二:
+设计一个看涨期权Token:
+创建期权Token 时，确认标的的价格与行权日期;
+发行方法 (项目方角色) : 根据转入的标的 (ETH) 发行期权Tken;(可选) : 可以用期权Token 与 USDT 以一个较低的价格创建交易对，模拟用户购买期权行权方法(用户角色): 在到期日当天，可通过指定的价格兑换出标的资产，并销毁期权Token过期销毁 (项目方角色) : 销毁所有期权Token 赎回标的，USDT资金
+
+作业十三：
+(可选)实现一个通过 DAO 管理资金的Treasury
+管理员可以从Treasury合约中提取资金withdraw
+治理Gov合约作为管理员
+通过发起提案从Treasury合约资金
