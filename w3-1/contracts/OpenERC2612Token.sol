@@ -4,7 +4,7 @@ import "../node_modules/@openzeppelin/contracts/token/ERC20/extensions/draft-ERC
 
 contract OpenERC2612Token is ERC20Permit {
 
-    constructor() ERC20("Yaoqi", "KPS") ERC20Permit("ERC2612Token") {
+    constructor() ERC20("yaoqi", "KPS") ERC20Permit("ERC2612Token") {
         _mint(msg.sender, 100000 * 10 ** 18);
     }
 
