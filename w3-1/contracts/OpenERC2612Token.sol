@@ -8,5 +8,4 @@ contract OpenERC2612Token is ERC20Permit {
         _mint(msg.sender, 100000 * 10 ** 18);
     }
 
-    
 }
