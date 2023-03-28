@@ -27,7 +27,7 @@ describe("TestOpenERC2612Token", function () {
         };
         const message = { owner: owner.address, spender: other.address, value: 100, nonce: nonce, deadline: deadline };
         // 唯一标识智能合约的哈希，由代币合约的名称，版本，所在的chainId以及合约部署的地址构成
-        const domain = { name: 'Yaoqi', version: '1', chainId:chainId, verifyingContract: openERC2612Token.address };
+        const domain = { name: 'yaoqi', version: '1', chainId:chainId, verifyingContract: openERC2612Token.address };
         const signature = await owner._signTypedData(domain, types, message);
         const { v, r, s } = yaoqi.ethers.utils.splitSignature(signature);
         console.log(v + "  " + r + "  " + s);

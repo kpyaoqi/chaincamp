@@ -8,7 +8,7 @@ contract MyERC721Token is ERC721URIStorage {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() ERC721("Yaoqi", "KPS") {}
+    constructor() ERC721("yaoqi", "KPS") {}
 
     //  QmZNFPwox146ohY93ViFD8omSThRAVYF1A96MNHbWoa2Nr
     function mint(address student, string memory tokenURI)
